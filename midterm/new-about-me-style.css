@@ -1,0 +1,99 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6; /* สีพื้นหลัง */
+}
+
+/* ส่วนหัวข้อ ABOUT ME */
+header {
+    background-color: rgb(254, 172, 15); /* สี R,G,B(254,172,15) */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ส่วน My Class และ My Favorite */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(255, 242, 204); /* สี R,G,B(255,242,204) */
+}
+
+.main-section div {
+    width: 48%;
+    padding: 10px;
+}
+
+/* ส่วน My Mood และ Fun Facts */
+/* ส่วน My Mood และ Fun Facts */
+/* ส่วน My Mood และ Fun Facts */
+/* ส่วน My Mood และ Fun Facts */
+.moods-section {
+    padding: 20px;
+    background-color: rgb(213, 232, 212); /* สีพื้นหลังเหมือน My Class */
+}
+
+.moods-grid {
+    display: grid; /* ใช้ grid layout */
+    grid-template-columns: repeat(3, 1fr); /* แบ่งเป็น 3 คอลัมน์ */
+    gap: 20px;
+}
+
+.mood-card {
+    display: flex; /* ใช้ flexbox เพื่อจัดการแนวตั้ง */
+    flex-direction: column; /* ให้รูปภาพและข้อความอยู่ในคอลัมน์เดียวกัน */
+    align-items: center; /* จัดตำแหน่งให้อยู่กลางแนวนอน */
+    background-color: transparent; /* ยกเลิกพื้นหลัง */
+    padding: 10px; /* เพิ่มระยะห่างภายใน */
+    text-align: center; /* ให้ข้อความอยู่กลาง */
+}
+
+.mood-card img {
+    max-width: 100px;
+    margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างรูปภาพ */
+}
+
+.mood-card p {
+    font-size: 16px;
+    font-weight: bold; /* ทำให้ข้อความเด่นขึ้น */
+}
+
+/* ตาราง Fun Facts */
+ul {
+    list-style: none; /* ยกเลิกลูกศรในรายการ */
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* ให้ Fun Facts อยู่ในคอลัมน์เดียวกับ My Mood */
+.moods-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* แบ่งออกเป็น 3 คอลัมน์ */
+    gap: 20px;
+}
+
+.mood-card:nth-child(1) {
+    grid-column: 1; /* My mood is Happy อยู่ในคอลัมน์แรก */
+}
+
+.mood-card:nth-child(2) {
+    grid-column: 2; /* My mood is Sad อยู่ในคอลัมน์ที่สอง */
+}
+
+.mood-card:nth-child(3) {
+    grid-column: 3; /* Fun Facts อยู่ในคอลัมน์ที่สาม */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d1d5db; /* สีเทาอ่อน */
+}
