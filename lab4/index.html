@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        
+        .navbar {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            padding: 10px;
+        }
+
+        
+        .hero {
+            background-color: #1f2937;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px, #f9faf8;
+            margin-right: 70%;
+        }
+
+        .hero p {
+            font-size: 18px, #E5E7EB;
+            margin-right: 70%;
+        }
+
+        .hero button {
+            background-color: #007BFF;
+            margin-right: 70%;
+    
+        }
+
+        .hero img {
+            
+            max-width: 50%;
+        }
+
+        
+        .info {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        .info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            border : 2px, solid #007BFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        
+        .quote {
+            background-color: #e8e8e8;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .quote h3 {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .quote p {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        
+        .CTA {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .CTA h4 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .CTA button {
+            background-color: #0056b3;
+        }
+
+        
+        .footer {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="Spider-Man-Logo.png" alt="SPIDER MANNN">
+            <ul class="nav-links">
+                <li><a href="#">I</a></li>
+                <li><a href="#">LOVE</a></li>
+                <li><a href="#">Spider man</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <img src="spider-man-comic-new-logo-png_seeklogo-130400.png" alt="Hero Image" align="right">
+            <h2>Why is Spider-Man the best superhero?</h2>
+            <p>I don't know tho he just supder cool and can wep you up all the time.</p>
+            <button>Join Us</button>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <h3>4 Spider-Man movies you should watch.</h3>
+            <div class="boxes">
+                <div class="box">
+                    <img src="the amazing.jpg" alt="amazing">
+                    <p>The amazing spider man</p>
+                </div>
+                <div class="box">
+                    <img src="no way home.jpg" alt="no way home">
+                    <p>Spider man No way home</p>
+                </div>
+                <div class="box">
+                    <img src="spider man into the spider verse.jpg" alt="spider man into the spider verse">
+                    <p>Spider man into the spider verse</p>
+                </div>
+                <div class="box">
+                    <img src="spider man across the spider verse.jpg" alt="spider man across the spider verse">
+                    <p>Spider man across the spider verse</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="container">
+            <h3>"I’ve known Spider-Man since I was a kid, and my love for him has gradually grown over time. Now, Spider-Man is my number one hero"</h3>
+            <p>CHaTeM Taiphob WWWW</p>
+        </div>
+    </section>
+
+    <section class="CTA">
+        <div class="container">
+            <h4>If you want to learn more about spider man </h4>
+            <button>Click Here</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Made with HTML ENGSE611 Class</p>
+        </div>
+    </footer>
+</body>
+</html>
