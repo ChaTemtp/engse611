@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script src="script.js" defer></script>
+
+    <script>
+        /*
+                function printName(name) {
+                    console.log(name)
+                }
+        
+                const printName2 = (name, surname) => {
+        
+                    console.log('Start');
+                    console.log('End');
+                    return (name + ' ' + surname);
+        
+                }
+        
+        
+                //printName("Hello");
+                console.log(printName2("Taiphob", "Kongjai"));
+                //------------------------------
+        
+                function success() {
+                    console.log("success called");
+                }
+        
+                function hello(cb) {
+                    console.log("hello called");
+                    cb();
+                }
+        
+                hello(success);
+        
+                //-------------------------------------------
+                function sendMessage(to, message, callback) {
+                    console.log("To " + to + ": " + message);
+                    callback();
+                }
+                sendMessage("Antony", "Hello Antony", function () {
+                    console.log("Message has been sent");
+                });
+        
+                sendMessage("Antony", "How are you?", function () {
+                    console.log("Message has been sent");
+                });
+                //----------------------------------
+        
+                function gcd(a, b, success) {
+                    let result;
+                    let min = a < b ? a : b;
+                    for (let i = min; i >= 1; i--) {
+                        if (a % i == 0 && b % i == 0) {
+                            result = i;
+                            break;
+                        }
+                    }
+                    // Call function and send result back
+                    success(result);
+                }
+                gcd(6, 15, function (result2) {
+                    console.log("GCD = " + result2);
+                });
+        
+                gcd(18, 11, function (result3) {
+                    console.log("Finding GCD of 18 and 11");
+                    console.log("Result: " + result3);
+                });
+                //------------------------------------------------
+        
+                function iterateArray(array, callback) {
+                    for (let i = 0; i < array.length; i++) {
+                        callback(array[i], i);
+                    }
+                }
+        
+                let numbers = [10, 20, 30, 40, 50];
+                let names = ["Chris", "Metin", "John", "Nathan"];
+        
+                console.log("Diplay indexes and values");
+                iterateArray(numbers, function (value, index) {
+                    console.log("index: " + index, "value: " + value);
+                });
+        
+                console.log("Length of array elements");
+                iterateArray(names, function (value, index) {
+                    console.log(value + " -> " + value.length);
+                });
+                //--------------------------------------------------
+                function benchmarking(measureFn) {
+                    let start = Date.now();
+                    measureFn();
+                    return (Date.now() - start) / 1000;
+                }
+        
+                function frequencyOfPrime() {
+                    let n = 100000;
+                    let i, j;
+                    let freq = n - 1;
+                    for (i = 2; i <= n; ++i) {
+                        for (j = Math.sqrt(i); j > 1; --j) {
+                            if (i % j == 0) { --freq; break; }
+                        }
+                    }
+                    return freq;
+                }
+        
+                console.log("Calculating...");
+                let sec = benchmarking(frequencyOfPrime);
+                console.log("It took %d seconds to find primes lower than 100,000.", sec);
+        */
+        console.log("Program started");
+        console.log("Waiting for 3 seconds...");
+
+        setTimeout(function () {
+            console.log("Hello World!");
+        }, 3000);
+
+    </script>
+
+    <title>LAB7</title>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+</body>
+
+</html>
