@@ -28,6 +28,6 @@ function add() {
 }
 
 // Can not access a function scoped variable in global scope
-console.log(y);
+console.log(x);
 
 add();

@@ -1,15 +1,15 @@
 // IFFE Syntax (Has it's own scope and runs right away)
 (function () {
-  const user = 'John';
+  const user = 'ANTONY';
   console.log(user);
-  const hello = () => console.log('Hello from the IIFE');
+  const hello = () => console.log('Hello from the AIETA');
   hello();
 })();
 
 // Params
 (function (name) {
   console.log('Hello ' + name);
-})('Shawn');
+})('TE');
 
 // Named IIFE (Can only be called recursively)
 (function hello() {

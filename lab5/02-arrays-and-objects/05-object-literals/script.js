@@ -2,7 +2,7 @@ let x;
 
 // Creating an object
 const person = {
-  name: 'John Doe',
+  name: 'TAIPHOB',
   age: 30,
   isAdmin: true,
   address: {
@@ -20,7 +20,7 @@ x = person.address.state;
 x = person.hobbies[0];
 
 // Updating properties
-person.name = 'Jane Doe';
+person.name = 'TAIPHOB';
 person['isAdmin'] = false;
 
 // Deleting properties
@@ -38,8 +38,8 @@ person.greet();
 
 // Keys with multiple words
 const person2 = {
-  'first name': 'Brad',
-  'last name': 'Traversy',
+  'first name': 'ANTONY',
+  'last name': 'ANTONY',
 };
 
 x = person2['first name'];
