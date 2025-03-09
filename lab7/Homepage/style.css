@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Layout */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-image {
+    width: 30%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.header-content {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* ปรับการจัดรูปแบบของโปรไฟล์ */
+.profile {
+    text-align: center;  /* จัดกลาง */
+}
+
+/* กำหนดให้ข้อมูลใต้รูปแสดงแบบตั้ง */
+.profile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* กำหนดการเว้นระยะระหว่างรายการ */
+.profile ul li {
+    margin: 5px 0;
+}
+
+/* ปรับรูปภาพให้มีความกว้างเหมาะสม */
+.image {
+    width: 100px;  /* ปรับขนาดภาพ */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* ปรับขนาดเมื่อใช้การซูม */
+.image.azoom {
+    width: 100%; 
+}
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 5px 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
