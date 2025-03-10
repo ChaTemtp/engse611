@@ -17,20 +17,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalImg = document.getElementById("modal-img");
     const closeBtn = document.querySelector(".close");
 
+    // ซ่อน Modal ตั้งแต่แรก (ป้องกันการเปิดอัตโนมัติ)
+    modal.style.display = "none";
+
     profilePic.addEventListener("click", function () {
-        modal.style.display = "flex";
-        modalImg.src = profilePic.src; // Show the clicked image
+        modal.style.display = "flex";  // แสดง Modal เมื่อคลิก
+        modalImg.src = profilePic.src;
     });
 
     closeBtn.addEventListener("click", function () {
-        modal.style.display = "none";
+        modal.style.display = "none";  // ปิด Modal เมื่อกดปุ่ม X
     });
 
-    // Close modal when clicking outside the image
     modal.addEventListener("click", function (event) {
         if (event.target === modal) {
-            modal.style.display = "none";
+            modal.style.display = "none";  // ปิด Modal เมื่อคลิกที่พื้นหลัง
         }
     });
 });
-
